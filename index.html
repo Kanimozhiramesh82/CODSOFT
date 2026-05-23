@@ -1,85 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kanimozhi Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kanimozhi Portfolio</title>
 
-    <style>
+  <link rel="stylesheet" href="style.css" />
 
-        body{
-            margin:0;
-            padding:0;
-            background-color:black;
-            color:white;
-            font-family:Arial, sans-serif;
-            text-align:center;
-        }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        header{
-            background-color:purple;
-            padding:30px;
-        }
-
-        section{
-            border:1px solid gray;
-            margin:20px;
-            padding:40px;
-        }
-
-        h1{
-            font-size:45px;
-        }
-
-        h2{
-            color:white;
-            font-size:35px;
-        }
-
-        p{
-            font-size:22px;
-        }
-
-        ul{
-            list-style:none;
-            padding:0;
-        }
-
-        li{
-            font-size:22px;
-            margin:10px;
-        }
-
-    </style>
-
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
-        <h1>Kanimozhi</h1>
-        <p>Web Developer</p>
-    </header>
+  <header>
+    <nav>
+      <h2 class="logo">Kani</h2>
 
-    <section>
-        <h2>About Me</h2>
-        <p>Hello! I'm Kani and I'm learning web development.</p>
-    </section>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section>
-        <h2>Skills: </h2>
+  <section class="hero" id="home">
 
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Python</li>
-        </ul>
-    </section>
+    <div class="hero-text">
+      <h1>Hello, I'm <span>Kanimozhi</span></h1>
 
-    <section>
-        <h2>Contact</h2>
-        <p>Email: kanimozhiramesh99@gmail.com</p>
-    </section>
+      <h3>Frontend Web Developer</h3>
+
+      <p>
+        Passionate web developer creating modern and responsive websites.
+      </p>
+
+      <div class="buttons">
+        <a href="#projects" class="btn">View Projects</a>
+
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="profile">
+    </div>
+
+  </section>
+
+  <section class="about" id="about">
+
+    <h2>About Me</h2>
+
+    <p>
+      I'm Kanimozhi, a passionate and creative web developer.
+      I enjoy building responsive and user-friendly websites using HTML, CSS, and JavaScript.
+    </p>
+
+  </section>
+
+  <section class="skills" id="skills">
+
+    <h2>My Skills</h2>
+
+    <div class="skill-box">
+
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">Python</div>
+      <div class="skill-card">GitHub</div>
+      <div class="skill-card">Responsive Design</div>
+
+    </div>
+
+  </section>
+
+  <section class="projects" id="projects">
+
+    <h2>Projects</h2>
+
+    <div class="project-container">
+
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A modern personal portfolio website using HTML and CSS.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Landing Page</h3>
+        <p>Responsive landing page with beautiful UI design.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Calculator App</h3>
+        <p>Simple calculator built using HTML, CSS and JavaScript.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="contact" id="contact">
+
+    <h2>Contact Me</h2>
+
+    <form>
+      <input type="text" placeholder="Your Name" required>
+
+      <input type="email" placeholder="Your Email" required>
+
+      <textarea rows="5" placeholder="Your Message"></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+  </section>
+
+  <footer>
+    <p>© 2026 Kanimozhi | All Rights Reserved</p>
+  </footer>
 
 </body>
 </html>
